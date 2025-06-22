@@ -11,6 +11,12 @@ function Write-Success {
     Write-Host $Message
 }
 
+function Write-Warning {
+    param([string]$Message)
+    Write-Host "[WARNING] " -ForegroundColor Yellow -NoNewline
+    Write-Host $Message
+}
+
 function Write-Error {
     param([string]$Message)
     Write-Host "[ERROR] " -ForegroundColor Red -NoNewline
@@ -62,7 +68,7 @@ if ($extensionFolder) {
     Write-Success "Old extension uninstalled"
 } else {
     Write-Debug "No existing extension found"
-    Write-Host "No old extension found to uninstall" -ForegroundColor Yellow
+    Write-Warning "No old extension found to uninstall"
 }
 
 # Install new extension

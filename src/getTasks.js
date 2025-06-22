@@ -132,9 +132,9 @@ function getTaskNode(filepath, match, taskConfig) {
   }
 
   // Completed Task
-  if (match[1].toLowerCase() === "x" && !taskConfig.completed) {
-    return null;
-  }
+ // if (match[1].toLowerCase() === "x" && !taskConfig.completed) {
+  //  return null;
+ // }
 
   // Initial task name
   let task = match[2];
