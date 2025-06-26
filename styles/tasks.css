@@ -1,0 +1,93 @@
+.task-depth-1 {
+  padding-left: 0;
+}
+
+.task-depth-2 {
+  padding-left: 20px;
+}
+
+.task-depth-3 {
+  padding-left: 40px;
+}
+
+.task-depth-4 {
+  padding-left: 60px;
+}
+
+/* Style for the checkbox */
+.task-checkboxL1 {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+/* Style for the checkbox */
+.task-checkboxL2 {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+/* Style for the checkbox */
+.task-checkboxL3 {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    vertical-align: middle;
+  }
+/* Style for the checkbox */
+.task-checkboxL4 {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+/* Style for the checkbox */
+.task-checkboxL5 {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+          
+/* Style for completed tasks */
+.completed-task {
+  color: var(--vscode-treeview-completedTask);
+  text-decoration: line-through;
+}
+
+/* Ensure completed tasks are visible but distinguished */
+.vscode-dark .completed-task,
+.vscode-light .completed-task {
+  opacity: 0.8;
+}
+
+/* Custom icon colors */
+:root {
+  --vscode-icon-foreground: var(--vscode-foreground);
+  --vscode-icon-error: var(--vscode-errorForeground);
+  --vscode-icon-warning: var(--vscode-warningForeground);
+  --vscode-icon-info: var(--vscode-infoForeground);
+}
+
+/* Task icon colors */
+.task-icon {
+  color: var(--vscode-icon-foreground);
+}
+
+.task-icon-error {
+  color: var(--vscode-icon-error);
+}
+
+.task-icon-warning {
+  color: var(--vscode-icon-warning);
+}
+
+.task-icon-info {
+  color: var(--vscode-icon-info);
+} 
